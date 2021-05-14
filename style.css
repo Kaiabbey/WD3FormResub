@@ -1,0 +1,382 @@
+body{
+    background: rgb(9,9,121);
+    background: linear-gradient(128deg, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 72%);
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 33vw 33.1vw 33vw;
+}   
+
+header{
+    height: 150px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    filter: drop-shadow(0px 15px 15px);
+    position: fixed;
+    margin: 10px;
+}
+
+section:hover + video{
+    display: block;
+}
+
+img{
+    height: 100%;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+.relbox{
+    position: relative;
+}
+
+.icon1::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f2b9';
+    font-weight: 900;
+    right: 0;
+    top: 25%;
+}
+
+.icon2::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f1fa';
+    font-weight: 900;
+    right: 0;
+    top: 25%;
+}
+
+.icon3::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f095';
+    font-weight: 900;
+    right: 0;
+    top: 25%;
+}
+
+.icon4::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f1ad';
+    font-weight: 900;
+    right: 0;
+    top: 25%;
+}
+
+.icon5::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f658';
+    font-weight: 900;
+    right: 0;
+    top: 34%;
+}
+
+.icon6::before{
+    position: absolute;
+    font-family: "Font Awesome 5 free";
+    content:'\f249';
+    font-weight: 900;
+    right: 0;
+    top: 25%;
+}
+
+
+section{
+    width: 34vw;
+    background-color: #3b6f79a2;
+    font-size: xx-large;
+    padding: 40px;
+    margin-bottom: 60px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+}
+
+input{
+    margin: 5px 0 30px 10%;
+    height: 70px;
+    width: 80%;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-size: 100%;
+    background-color: #36555a75;
+    outline: none;
+    color: whitesmoke;
+}
+
+input:focus{
+    background-color: #3e676d;
+    height: 90px;
+    transition: height .5s;
+}
+
+.message{
+    font-size: 70%;
+    height: 140px;
+    margin: 5px 0 30px 10%;
+    width: 80%;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-size: 100%;
+    background-color: #36555a75;
+    outline: none;
+    color: whitesmoke;
+}
+
+.message:focus{
+    background-color: #3e676d;
+    height: 200px;
+    transition: height .5s;
+}
+
+form{
+    display: block;
+    width: 100%;
+
+}
+
+label{
+    display: block;
+}
+
+footer{
+    height: 150px;
+    padding-top: 150px;
+    background-color: #0b2a3f;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox{
+    display: flex;
+    height: fit-content;
+    margin: 0 50px;
+}
+
+p{
+    font-size: x-large;
+    margin: 3px 0 0 5px;
+    color: skyblue;
+}
+
+.copyear{
+    color: skyblue;
+}
+
+.copyright{
+    width: fit-content;
+    position: relative;
+    bottom: 140px;
+    right: 210px;
+    filter: drop-shadow(3px 3px 3px);
+}
+
+i{
+    color: skyblue;
+}
+
+video{
+    position: absolute;
+    left: 10px;
+    top:1080px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    filter: drop-shadow(8px 13px 9px);
+}
+
+h1{
+     display: none;
+     color: skyblue;
+     position: fixed;
+     top: -6px;
+     left: 37vw;
+     filter: drop-shadow(3px 3px 3px black);
+}
+.kailogo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: salmon;
+    position: relative;
+    right: -200px;
+    top: 110px;
+}
+
+.kailogo div{
+    position: relative;
+    left: 4px;
+    top: 6px;
+    color: #0b2a3f;
+}
+
+.footerPHEM{
+    bottom: 11px;
+    left: 65px;
+    font-size:medium;
+    filter: drop-shadow(3px 3px 3px black);
+    display: none;
+    color: skyblue;
+    position: absolute;
+}
+
+label::after{
+    content: "*";
+    color: red;
+}
+
+.notreq::after{
+    content: "";
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+
+@media only screen and (max-width:450px) {
+    body {
+      position: absolute;
+      background: rgb(9,9,121);
+    }
+
+    label{
+        display: none;
+    }
+
+    header{
+        height: 50px;
+        width: 100vw;
+        background-color: #0b2a3f;
+        margin: 0;
+        filter: drop-shadow( 0px 4px 5px);
+    }
+    
+    img{
+        position: fixed;
+        height: 45px;
+        margin-left: 5px;
+        margin-top: 2.5px;
+    }
+    
+    section{
+        width: 100vw;
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 0;
+    }
+
+    input{
+        width: 99%;
+        margin: 15px 0;
+        padding: 0;
+    }
+    
+    footer{
+        flex-direction: column;
+        padding: 0;
+        height: 50px;
+        width: 100vw;
+    }
+
+    h1{
+        display: block;
+    }
+    
+    .subject{
+        display: none;
+    }
+
+    p{
+        font-size: x-large;
+        margin: 3px 0 0 5px;
+        color: skyblue;
+    }
+    
+    i{
+        color: skyblue;
+    }
+
+    .flexbox{
+        display: none;
+    }
+
+    .kailogo{
+        right: -85vw;
+        top: -8px;
+    }
+
+    .copyright{
+        bottom: -5px;
+        right: -5px;
+    }
+
+    .footerPHEM{
+        display: block;
+        bottom: 12px;
+        left: 62px;
+        font-size: medium;
+    }
+
+    .message{
+        width: 99%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section:hover + video{
+        display: none;
+    }
+    
+    .icon1::before{
+        display: none;
+    }
+    
+    .icon2::before{
+        display: none;
+    }
+    
+    .icon3::before{
+        display: none;
+    }
+    
+    .icon4::before{
+        display: none;
+    }
+    
+    .icon5::before{
+        display: none;
+    }
+    
+    .icon6::before{
+        display: none;
+    }
+
+  }

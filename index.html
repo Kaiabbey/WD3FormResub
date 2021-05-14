@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PHEM</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="js.js" defer></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header></header>
+            <img src="phemlogo.svg" alt="phem logo">
+        <section>
+            <form  onsubmit="return ValidateForm()">
+                <label>First Name</label>
+                <div class="relbox">
+                   <input type="text" pattern="[a-zA-Z-'--]{2,}" id="first" placeholder="First Name" oninput="validitycheck(this)" required> 
+                   <div class="icon1"></div>
+                </div>
+                <div class="Error" id="firstname"></div>
+                <label>Last Name</label>
+                <div class="relbox">
+                    <input type="text" pattern="[a-zA-Z-'--]{2,}" id="last" placeholder="Last Name" oninput="validitycheck(this)" required>
+                    <div class="icon1"></div>
+                </div> 
+                <div class="Error" id="lastname"></div>
+                <label>Email</label>
+                <div class="relbox">
+                    <input type="text" pattern=".+@.+[.].+" id="emailinput" placeholder="Email" oninput="Emailvaliditycheck(this)" required>
+                    <div class="icon2" style="content: '\f2b9';"></div>
+                </div>
+                <div class="Error" id="email"></div>
+                <label>Phone Number</label>
+                <div class="relbox">
+                    <input type="number" id="ph" placeholder="Phone Number" oninput="phvaliditycheck(this)" required>
+                    <div class="icon3" style="content: '\f2b9';"></div>
+                </div>
+                <div class="Error" id="phone"></div>
+                <label>Organisation</label>
+                <div class="relbox">
+                    <input type="text" placeholder="Organisation" id="org" oninput="validitycheck(this)" required>
+                    <div class="icon4" style="content: '\f2b9';"></div>
+                </div>
+                <div class="Error" id="organisation"></div>
+                <label>Message</label>
+                <div class="relbox">
+                    <textarea class="message" placeholder="Message" id="msg" oninput="validitycheck(this)" required></textarea>
+                    <div class="icon5"></div>
+                </div>
+                <div class="Error" id="message"></div>
+                <label class="notreq">Subject</label>
+                <div class="relbox">
+                    <input type="text" placeholder="Subject" class="subject">
+                    <div class="icon6" style="content: '\f2b9';"></div>
+                </div>
+                <input class="Submitbutton" type="Submit">
+            </form>
+        </section>
+        <video width="320" height="240" autoplay muted loop>
+            <source src="WIN_20210429_20_51_04_Pro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <footer>
+            <div class="copyright">
+                <i class="far fa-copyright"></i>
+                <p class="copyyear"> 2021</p>
+            </div>
+            <h2 class="footerPHEM">PHEM</h2>
+            <div class="flexbox">
+                <i class="far fa-envelope" style="font-size: xx-large;"></i>
+                <p> : Email.smith@gmail.com</p>
+            </div>
+            <div class="flexbox">
+                <i class="fas fa-map-marked" style="font-size: xx-large;"></i>
+                <p> : Brisbane CBD 4000</p>
+            </div>
+            <div class="flexbox">
+                <i class="fas fa-phone" style="font-size: xx-large;"></i>
+                <p>: 0484698625</p>
+            </div> 
+            <div class="kailogo">
+                <div>KA</div>
+            </div>
+        </footer>
+    </body>
+</html>
